@@ -39,3 +39,11 @@ const cities = [
 	{isVisited:false, name: 'Seul'}
 ];
 
+const visitedCities = cities.map(city => {
+
+	return city.isVisited ? `${city.name} (Visitado)` : city.name;
+  });
+  
+  console.log(visitedCities);
+
+  //El 3.3 con ayuda de ChatGPT
